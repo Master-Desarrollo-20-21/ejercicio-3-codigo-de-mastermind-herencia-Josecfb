@@ -12,7 +12,7 @@ public class Combination {
 	}
 
 	protected void show() {
-		String salida=""; 
+		String salida="\n"; 
 		for (char color:positions){
 			salida+=color;
 		}
