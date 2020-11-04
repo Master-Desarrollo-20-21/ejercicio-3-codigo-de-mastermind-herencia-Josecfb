@@ -7,16 +7,17 @@ public class ProposedCombination extends Combination{
 	}
 	
 	public boolean isValidCombi() {
+		Console console =new Console();
 		if (positions.length!=4) {
-			System.out.println("Wrong proposed combination length");
+			console.out("Wrong proposed combination length");
 			return false;
 		}
 		if (isWrongColorCombi()) {
-			System.out.println("Wrong colors, they must be: rbygop");
+			console.out("Wrong colors, they must be: rbygop");
 			return false;
 		}
 		if (colorIsRepeated()) {
-			System.out.println("Repeated colors");
+			console.out("Repeated colors");
 			return false;
 		}
 		return true;
